@@ -14,9 +14,9 @@ public class Main {
 
         System.out.println("\nEvent 1: Crossroads");
         System.out.println("\nChoose a road:");
-        System.out.println("1 - old trail (-20 health)");
-        System.out.println("2 - find a treasure (+30 luck)");
-        System.out.println("any other number - get lost (-10 health)");
+        System.out.println("1 - old trail");
+        System.out.println("2 - find a treasure");
+        System.out.println("any other number - get lost");
         int choice1 = scanner.nextInt();
 
         if (choice1 == 1) {
@@ -33,9 +33,9 @@ public class Main {
 
         System.out.println("\nEvent 2: Mysterious well");
         System.out.println("\nWhat will you do?");
-        System.out.println("1 - drink the magical water (+50 health)");
-        System.out.println("2 - ignore the well (-10 luck)");
-        System.out.println("any other number - nothing happens");
+        System.out.println("1 - drink the magical water");
+        System.out.println("2 - ignore the well");
+        System.out.println("any other number");
         int choice2 = scanner.nextInt();
 
         if (choice2 == 1) {
@@ -51,28 +51,28 @@ public class Main {
 
         System.out.println("\nEvent 3: Encounter with a magical creature");
         System.out.println("\nChoose creature type:");
-        System.out.println("1 - friendly (+20 здоров’я)");
-        System.out.println("2 - hostile (-30 здоров’я)");
-        System.out.println("3 - indifferent (нічого)");
+        System.out.println("1 - friendly");
+        System.out.println("2 - hostile");
+        System.out.println("3 - indifferent");
         int creatureType = scanner.nextInt();
 
         switch (creatureType) {
             case 1:
                 health += 20;
-                System.out.println("The creature was friendly and shared food. Health +20.");
+                System.out.println("The creature was friendly and shared food.");
                 break;
             case 2:
                 health -= 30;
-                System.out.println("The creature was hostile and attacked! Health -30.");
+                System.out.println("The creature was hostile and attacked!");
                 break;
             case 3:
-                System.out.println("The creature was indifferent. Nothing changed.");
+                System.out.println("The creature was indifferent.");
                 break;
             default:
-                System.out.println("Unknown creature. Nothing changed.");
+                System.out.println("Unknown creature.");
         }
 
-        // Підсумок
+
         System.out.println("\n--- Final Status ---");
         System.out.println("\nHealth: " + health);
         System.out.println("Luck: " + luck);
